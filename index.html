@@ -8,8 +8,6 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="theme-color" content="#1E293B">
     <link rel="canonical" href="https://salesarchitect.github.io/client-a-lp-green-techno-2026/">
-
-    <!-- OGP -->
     <meta property="og:title" content="株式会社グリーンテクノ | 法人向け防水工事専門">
     <meta property="og:description" content="確実な防水と完璧な書類で、法人様の資産を守り、現場監督の負担を減らす。愛媛県全域対応。">
     <meta property="og:type" content="website">
@@ -17,14 +15,10 @@
     <meta property="og:image" content="./images/ogp.jpg">
     <meta property="og:site_name" content="株式会社グリーンテクノ">
     <meta property="og:locale" content="ja_JP">
-
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="株式会社グリーンテクノ | 法人向け防水工事専門">
     <meta name="twitter:description" content="確実な防水と完璧な書類で、法人様の資産を守り、現場監督の負担を減らす。">
     <meta name="twitter:image" content="./images/ogp.jpg">
-
-    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -48,7 +42,6 @@
       "areaServed": {"@type": "State", "name": "愛媛県"}
     }
     </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
@@ -88,10 +81,11 @@
 
         <!-- ===== Hero ===== -->
         <section class="hero" aria-labelledby="hero-title">
-            <div class="hero-bg-decor" aria-hidden="true">
-                <span class="decor-circle decor-1"></span>
-                <span class="decor-circle decor-2"></span>
-                <span class="decor-grid"></span>
+            <div class="hero-bg">
+                <img src="./images/hero-bg.jpg" alt="" class="hero-bg-img">
+                <div class="hero-bg-overlay"></div>
+                <!-- Decorative grid lines -->
+                <div class="hero-grid-deco" aria-hidden="true"></div>
             </div>
             <div class="container">
                 <div class="hero-inner">
@@ -122,43 +116,44 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- ===== 信頼指標バー ===== -->
-        <div class="trust-bar">
-            <div class="container trust-bar-inner">
-                <div class="trust-item">
-                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
-                    <div>
-                        <span class="trust-num">20</span><span class="trust-unit">年以上の施工実績</span>
-                    </div>
-                </div>
-                <div class="trust-sep" aria-hidden="true"></div>
-                <div class="trust-item">
-                    <i class="fa-solid fa-medal" aria-hidden="true"></i>
-                    <div>
-                        <span class="trust-num">3</span><span class="trust-unit">種の1級技能士資格保有</span>
-                    </div>
-                </div>
-                <div class="trust-sep" aria-hidden="true"></div>
-                <div class="trust-item">
-                    <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
-                    <div>
-                        <span class="trust-label">愛媛県全域</span><span class="trust-unit">対応</span>
-                    </div>
-                </div>
-                <div class="trust-sep" aria-hidden="true"></div>
-                <div class="trust-item">
-                    <i class="fa-solid fa-file-contract" aria-hidden="true"></i>
-                    <div>
-                        <span class="trust-label">詳細書類</span><span class="trust-unit">完全提出</span>
+            <!-- Trust stats bar inside hero -->
+            <div class="hero-stats">
+                <div class="container">
+                    <div class="hero-stats-inner">
+                        <div class="stat-item">
+                            <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                            <div>
+                                <span class="stat-num">20</span><span class="stat-unit">年以上の施工実績</span>
+                            </div>
+                        </div>
+                        <div class="stat-sep" aria-hidden="true"></div>
+                        <div class="stat-item">
+                            <i class="fa-solid fa-medal" aria-hidden="true"></i>
+                            <div>
+                                <span class="stat-num">3</span><span class="stat-unit">種の1級技能士資格保有</span>
+                            </div>
+                        </div>
+                        <div class="stat-sep" aria-hidden="true"></div>
+                        <div class="stat-item">
+                            <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+                            <div>
+                                <span class="stat-label">愛媛県全域</span><span class="stat-unit">対応</span>
+                            </div>
+                        </div>
+                        <div class="stat-sep" aria-hidden="true"></div>
+                        <div class="stat-item">
+                            <i class="fa-solid fa-file-contract" aria-hidden="true"></i>
+                            <div>
+                                <span class="stat-label">詳細書類</span><span class="stat-unit">完全提出</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- ===== Pain Points ===== -->
-        <section class="section bg-white" id="pain" aria-labelledby="pain-title">
+        <section class="section" id="pain" aria-labelledby="pain-title">
             <div class="container">
                 <header class="section-header">
                     <span class="section-en">FOR CORPORATE &amp; PARTNERS</span>
@@ -168,8 +163,14 @@
                 </header>
                 <div class="pain-grid">
                     <article class="pain-card direct fade-in">
-                        <div class="pain-icon" aria-hidden="true"><i class="fa-regular fa-building"></i></div>
-                        <h3>不動産オーナー様・管理会社様</h3>
+                        <div class="pain-card-top">
+                            <div class="pain-illus" aria-hidden="true">
+                                <img src="./images/illus-owner.png" alt="" class="pain-illus-img">
+                                <div class="pain-illus-placeholder">不動産オーナーイラスト</div>
+                            </div>
+                            <div class="pain-icon" aria-hidden="true"><i class="fa-regular fa-building"></i></div>
+                            <h3>不動産オーナー様・管理会社様</h3>
+                        </div>
                         <ul class="pain-list">
                             <li>工場の屋根から雨漏りし、機械や製品への被害リスクがあり焦っている</li>
                             <li>業者の中間マージンを省き、直接適正価格で発注したい</li>
@@ -177,8 +178,14 @@
                         </ul>
                     </article>
                     <article class="pain-card subcon fade-in">
-                        <div class="pain-icon" aria-hidden="true"><i class="fa-solid fa-helmet-safety"></i></div>
-                        <h3>元請け企業・現場監督様</h3>
+                        <div class="pain-card-top">
+                            <div class="pain-illus" aria-hidden="true">
+                                <img src="./images/illus-supervisor.png" alt="" class="pain-illus-img">
+                                <div class="pain-illus-placeholder">現場監督イラスト</div>
+                            </div>
+                            <div class="pain-icon" aria-hidden="true"><i class="fa-solid fa-helmet-safety"></i></div>
+                            <h3>元請け企業・現場監督様</h3>
+                        </div>
                         <ul class="pain-list">
                             <li>技術力が高く、工期を厳守できる防水職人が足りない</li>
                             <li>下地処理などの工程写真の提出がルーズな下請けには任せられない</li>
@@ -195,32 +202,50 @@
         </section>
 
         <!-- ===== USP ===== -->
-        <section class="section" id="usp" aria-labelledby="usp-title">
-            <div class="container container-sm">
-                <header class="section-header">
+        <section class="section section-dark" id="usp" aria-labelledby="usp-title">
+            <div class="container">
+                <header class="section-header section-header-light">
                     <span class="section-en">OUR STRENGTHS</span>
                     <h2 class="section-title" id="usp-title">法人取引で選ばれる<span>3つの理由</span></h2>
                 </header>
                 <div class="usp-grid">
                     <article class="usp-card fade-in">
-                        <div class="usp-num" aria-hidden="true">01</div>
-                        <div class="usp-content">
-                            <h3>現場責任者は「1級技能士」。<br>一切の手戻りを許さない施工品質</h3>
-                            <p>ウレタン塗膜・FRP・シーリングの各1級技能士資格を保有する代表が現場を統括。技術的な可否判断がその場で完結し、「話が早い」「仕事が確実」と法人様から高い評価をいただいています。</p>
+                        <div class="usp-card-inner">
+                            <div class="usp-illus" aria-hidden="true">
+                                <img src="./images/illus-usp-01.png" alt="" class="usp-illus-img">
+                                <div class="usp-illus-placeholder">確かな技術力イラスト</div>
+                            </div>
+                            <div class="usp-num" aria-hidden="true">01</div>
+                            <div class="usp-content">
+                                <h3>現場責任者は「1級技能士」。<br>一切の手戻りを許さない施工品質</h3>
+                                <p>ウレタン塗膜・FRP・シーリングの各1級技能士資格を保有する代表が現場を統括。技術的な可否判断がその場で完結し、「話が早い」「仕事が確実」と法人様から高い評価をいただいています。</p>
+                            </div>
                         </div>
                     </article>
                     <article class="usp-card fade-in">
-                        <div class="usp-num" aria-hidden="true">02</div>
-                        <div class="usp-content">
-                            <h3>稟議書・完了報告書にそのまま使える<br>「完璧な書類と写真台帳」</h3>
-                            <p>「一式」見積もりは排除し、平米数と材料を明記した詳細見積書を作成。施工前・中間工程・施工後の写真を徹底撮影し、決裁者様にも納得いただける台帳をご提出します。</p>
+                        <div class="usp-card-inner">
+                            <div class="usp-illus" aria-hidden="true">
+                                <img src="./images/illus-usp-02.png" alt="" class="usp-illus-img">
+                                <div class="usp-illus-placeholder">迅速な対応イラスト</div>
+                            </div>
+                            <div class="usp-num" aria-hidden="true">02</div>
+                            <div class="usp-content">
+                                <h3>稟議書・完了報告書にそのまま使える<br>「完璧な書類と写真台帳」</h3>
+                                <p>「一式」見積もりは排除し、平米数と材料を明記した詳細見積書を作成。施工前・中間工程・施工後の写真を徹底撮影し、決裁者様にも納得いただける台帳をご提出します。</p>
+                            </div>
                         </div>
                     </article>
                     <article class="usp-card fade-in">
-                        <div class="usp-num" aria-hidden="true">03</div>
-                        <div class="usp-content">
-                            <h3>創業20年の確かな実績に基づく<br>安全管理とコンプライアンス</h3>
-                            <p><strong>創業から20年以上</strong>培った経験で、グリーンファイル（安全書類）の迅速な作成提出、有資格者による安全作業、テナント様や近隣住民様への配慮など、法人様が求める基準をクリアしています。</p>
+                        <div class="usp-card-inner">
+                            <div class="usp-illus" aria-hidden="true">
+                                <img src="./images/illus-usp-03.png" alt="" class="usp-illus-img">
+                                <div class="usp-illus-placeholder">安心の保証イラスト</div>
+                            </div>
+                            <div class="usp-num" aria-hidden="true">03</div>
+                            <div class="usp-content">
+                                <h3>創業20年の確かな実績に基づく<br>安全管理とコンプライアンス</h3>
+                                <p><strong>創業から20年以上</strong>培った経験で、グリーンファイル（安全書類）の迅速な作成提出、有資格者による安全作業、テナント様や近隣住民様への配慮など、法人様が求める基準をクリアしています。</p>
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -228,7 +253,7 @@
         </section>
 
         <!-- ===== Services & Cases ===== -->
-        <section class="section bg-white" id="cases" aria-labelledby="cases-title">
+        <section class="section" id="cases" aria-labelledby="cases-title">
             <div class="container">
                 <header class="section-header">
                     <span class="section-en">SERVICES &amp; CASES</span>
@@ -236,8 +261,8 @@
                 </header>
 
                 <div class="service-info fade-in">
-                    <div>
-                        <h4>対応物件</h4>
+                    <div class="service-info-block">
+                        <h4><i class="fa-solid fa-building" aria-hidden="true"></i> 対応物件</h4>
                         <ul>
                             <li>工場・倉庫の屋根（スレート・折板など）</li>
                             <li>商業ビル・テナントビルの屋上</li>
@@ -245,8 +270,8 @@
                             <li>公共施設・病院・学校など</li>
                         </ul>
                     </div>
-                    <div>
-                        <h4>施工メニュー</h4>
+                    <div class="service-info-block">
+                        <h4><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> 施工メニュー</h4>
                         <ul>
                             <li>屋上・屋根防水（ウレタン/FRP/シート）</li>
                             <li>外壁シーリング打ち替え・ひび割れ補修</li>
@@ -315,9 +340,9 @@
         </section>
 
         <!-- ===== Flow ===== -->
-        <section class="section" id="flow" aria-labelledby="flow-title">
-            <div class="container container-sm">
-                <header class="section-header">
+        <section class="section section-teal" id="flow" aria-labelledby="flow-title">
+            <div class="container">
+                <header class="section-header section-header-light">
                     <span class="section-en">WORK FLOW</span>
                     <h2 class="section-title" id="flow-title">ご契約・施工の<span>流れ</span></h2>
                 </header>
@@ -362,7 +387,7 @@
         </section>
 
         <!-- ===== FAQ ===== -->
-        <section class="section bg-white" id="faq" aria-labelledby="faq-title">
+        <section class="section" id="faq" aria-labelledby="faq-title">
             <div class="container container-sm">
                 <header class="section-header">
                     <span class="section-en">FAQ</span>
@@ -410,7 +435,7 @@
         </section>
 
         <!-- ===== Company ===== -->
-        <section class="section" id="company" aria-labelledby="company-title">
+        <section class="section section-light-gray" id="company" aria-labelledby="company-title">
             <div class="container container-sm">
                 <header class="section-header">
                     <span class="section-en">COMPANY</span>
@@ -443,7 +468,7 @@
         <!-- ===== Contact Form ===== -->
         <section class="contact-section" id="contact" aria-labelledby="contact-title">
             <div class="container container-sm">
-                <header class="section-header">
+                <header class="section-header section-header-light">
                     <span class="section-en">CONTACT</span>
                     <h2 class="section-title" id="contact-title">ご相談・お問い合わせ</h2>
                 </header>
@@ -451,7 +476,6 @@
                     相見積もりのご依頼、協力業者募集に関するご相談など、お気軽にお問い合わせください。<br>
                     現地調査およびお見積もりは<strong class="accent-text">無料</strong>です。
                 </p>
-
                 <div class="contact-tel-block">
                     <div class="contact-tel-label">お急ぎの方はお電話で</div>
                     <a href="tel:08025523680" class="contact-tel-num">
@@ -460,12 +484,10 @@
                     </a>
                     <div class="contact-tel-hours">受付時間：平日 8:00〜18:00</div>
                 </div>
-
                 <div class="form-box">
                     <form name="contact-b2b" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" id="contact-form" novalidate>
                         <input type="hidden" name="form-name" value="contact-b2b">
                         <p class="honeypot-field"><label>Don't fill this out: <input name="bot-field"></label></p>
-
                         <div class="form-group">
                             <fieldset>
                                 <legend class="form-label">ご相談種別 <span class="req-badge">必須</span></legend>
@@ -481,17 +503,14 @@
                                 </div>
                             </fieldset>
                         </div>
-
                         <div class="form-group">
                             <label class="form-label" for="company-name">会社名 / 屋号 <span class="req-badge">必須</span></label>
                             <input type="text" id="company-name" name="company" class="form-input" required placeholder="例：株式会社〇〇不動産" autocomplete="organization">
                         </div>
-
                         <div class="form-group">
                             <label class="form-label" for="name">ご担当者名 <span class="req-badge">必須</span></label>
                             <input type="text" id="name" name="name" class="form-input" required placeholder="例：松山 太郎" autocomplete="name">
                         </div>
-
                         <div class="form-row">
                             <div class="form-group">
                                 <label class="form-label" for="phone">電話番号 <span class="req-badge">必須</span></label>
@@ -502,12 +521,10 @@
                                 <input type="email" id="email" name="email" class="form-input" required placeholder="例：info@example.com" autocomplete="email">
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label class="form-label" for="message">ご相談内容 <span class="opt-badge">任意</span></label>
                             <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="例：工場の屋根から雨漏りしている。相見積もりをお願いしたい。&#10;物件の所在地、規模、ご希望の工期などをお知らせいただけるとスムーズです。"></textarea>
                         </div>
-
                         <div class="form-submit">
                             <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
                                 入力内容を送信する <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
@@ -521,7 +538,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- フッター -->
